@@ -1,0 +1,18 @@
+# ── Alibaba Cloud ACK Cluster — Example Variables ──
+# Copy this file to terraform.tfvars and fill in your values.
+
+region              = "cn-hongkong"
+cluster_name        = "tfspin-alicloud-k8s"
+vpc_name            = "tfspin-k8s-vpc"
+vpc_cidr            = "10.0.0.0/16"
+vswitch_name        = "tfspin-k8s-vswitch"
+vswitch_cidr        = "10.0.1.0/24"
+zone_id             = "cn-hongkong-g"
+ack_cluster_spec    = "ack.pro.small"
+node_instance_types = ["ecs.t5-lc2m1.nano"]
+node_count          = 1
+service_cidr        = "172.16.0.0/16"
+pod_cidr            = "10.244.0.0/16"
+
+# ⚠️  Set a secure password before deploying!
+worker_password = "YOUR_SECURE_PASSWORD_HERE"
